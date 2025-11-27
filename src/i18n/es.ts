@@ -69,7 +69,7 @@ export const es = {
     ],
     bestFitTitle: "Clientes ideales",
     bestFit:
-      "SaaS teams, scale-ups, and early-stage founders who need reliable cloud/on-prem architecture, stronger delivery pipelines, clearer visibility, or AI workload readiness — without increasing headcount.",
+      "Equipos SaaS, scale-ups y fundadores en etapa temprana que necesitan arquitectura fiable en la nube/on-prem, pipelines de entrega mas solidos, mayor visibilidad o preparacion para cargas de IA, sin aumentar plantilla.",
     resultsTitle: "Resultados recientes",
     resultsNote: "Anonimizados, logrados en otros proyectos",
     results: [
