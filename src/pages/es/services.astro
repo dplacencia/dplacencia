@@ -1,0 +1,11 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import ServicesPage from "../../components/ServicesPage.astro";
+import { getTranslations } from "../../i18n";
+
+const t = getTranslations("es");
+---
+
+<BaseLayout title={t.meta.servicesTitle} description={t.meta.servicesDescription} t={t} locale="es">
+  <ServicesPage t={t} locale="es" />
+</BaseLayout>
