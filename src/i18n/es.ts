@@ -69,7 +69,7 @@ export const es = {
     ],
     bestFitTitle: "Clientes ideales",
     bestFit:
-      "Equipos SaaS y scale-ups con cultura de ingeniería que necesitan fiabilidad en producción, más visibilidad o preparación para cargas de IA, sin aumentar headcount.",
+      "SaaS teams, scale-ups, and early-stage founders who need reliable cloud/on-prem architecture, stronger delivery pipelines, clearer visibility, or AI workload readiness — without increasing headcount.",
     resultsTitle: "Resultados recientes",
     resultsNote: "Anonimizados, logrados en otros proyectos",
     results: [
