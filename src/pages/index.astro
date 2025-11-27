@@ -1,0 +1,11 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import HomePage from "../components/HomePage.astro";
+import { getTranslations } from "../i18n";
+
+const t = getTranslations("en");
+---
+
+<BaseLayout title={t.meta.homeTitle} description={t.meta.homeDescription} t={t} locale="en">
+  <HomePage t={t} locale="en" />
+</BaseLayout>

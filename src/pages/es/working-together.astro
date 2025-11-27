@@ -1,0 +1,11 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import WorkingTogetherPage from "../../components/WorkingTogetherPage.astro";
+import { getTranslations } from "../../i18n";
+
+const t = getTranslations("es");
+---
+
+<BaseLayout title={t.meta.workingTitle} description={t.meta.workingDescription} t={t} locale="es">
+  <WorkingTogetherPage t={t} locale="es" />
+</BaseLayout>

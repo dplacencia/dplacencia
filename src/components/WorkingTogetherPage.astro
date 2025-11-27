@@ -1,0 +1,40 @@
+---
+import type { Locale, Translations } from "../i18n";
+const { t } = Astro.props as { t: Translations; locale: Locale };
+---
+
+<section class="mx-auto max-w-3xl space-y-8 text-slate-700 dark:text-slate-300">
+  <header class="space-y-2">
+    <p class="text-xs uppercase tracking-[0.25em] text-sky-600/80 dark:text-sky-400/80">{t.workingTogether.label}</p>
+    <h1 class="text-3xl font-semibold tracking-tight text-slate-900 dark:text-slate-100">{t.workingTogether.heading}</h1>
+  </header>
+
+  <article class="space-y-6">
+    <section class="space-y-3">
+      <h2 class="text-xl font-semibold text-slate-900 dark:text-slate-100">{t.workingTogether.howTitle}</h2>
+      <div class="space-y-3 text-base leading-relaxed">
+        {t.workingTogether.howBody.map((p) => (
+          <p>{p}</p>
+        ))}
+      </div>
+    </section>
+
+    <section class="space-y-3">
+      <h2 class="text-xl font-semibold text-slate-900 dark:text-slate-100">{t.workingTogether.businessTitle}</h2>
+      <div class="space-y-3 text-base leading-relaxed">
+        {t.workingTogether.businessBody.map((p) => (
+          <p>{p}</p>
+        ))}
+      </div>
+    </section>
+
+    <section class="space-y-3">
+      <h2 class="text-xl font-semibold text-slate-900 dark:text-slate-100">{t.workingTogether.availabilityTitle}</h2>
+      <div class="space-y-3 text-base leading-relaxed">
+        {t.workingTogether.availabilityBody.map((p) => (
+          <p>{p}</p>
+        ))}
+      </div>
+    </section>
+  </article>
+</section>

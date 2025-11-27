@@ -1,0 +1,11 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import NotFoundPage from "../components/NotFoundPage.astro";
+import { getTranslations } from "../i18n";
+
+const t = getTranslations("en");
+---
+
+<BaseLayout title={t.meta.notFoundTitle} description={t.meta.notFoundTitle} t={t} locale="en">
+  <NotFoundPage t={t} locale="en" />
+</BaseLayout>

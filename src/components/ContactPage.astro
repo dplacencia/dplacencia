@@ -1,0 +1,43 @@
+---
+import type { Locale, Translations } from "../i18n";
+const { t } = Astro.props as { t: Translations; locale: Locale };
+
+const mailto = `mailto:${t.contact.emailCta}?subject=${encodeURIComponent(t.contact.mailtoSubject)}&body=${t.contact.mailtoBody}`;
+---
+
+<section class="space-y-4">
+  <h1 class="text-2xl font-semibold text-slate-900 dark:text-slate-100">{t.contact.heading}</h1>
+  <p class="text-base text-slate-700 dark:text-slate-300">
+    {t.contact.intro}
+  </p>
+  <ul class="space-y-3 text-base text-slate-700 dark:text-slate-300">
+    <li>
+      {t.contact.emailLabel}:
+      <a href={mailto} class="text-sky-600 hover:underline dark:text-sky-400">
+        {t.contact.emailCta}
+      </a>
+      <span class="ml-2 text-sm text-slate-500 dark:text-slate-500">{t.contact.emailResponse}</span>
+    </li>
+    <li>
+      {t.contact.linkedinLabel}:
+      <a href="https://www.linkedin.com/in/daniel-placencia-alvarez/" class="text-sky-600 hover:underline dark:text-sky-400">
+        linkedin.com/in/daniel-placencia-alvarez
+      </a>
+    </li>
+    <li>
+      {t.contact.githubLabel}:
+      <a href="https://github.com/dplacencia" class="text-sky-600 hover:underline dark:text-sky-400">@dplacencia</a>
+    </li>
+    <li>
+      {t.contact.maltLabel}:
+      <a
+        href="https://www.malt.es/profile/danielplacencia?overview"
+        class="text-sky-600 hover:underline dark:text-sky-400"
+        rel="noopener"
+      >
+        {t.contact.maltProfile}
+      </a>
+      <span class="ml-2 text-sm text-slate-500">{t.contact.maltNote}</span>
+    </li>
+  </ul>
+</section>
